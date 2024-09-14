@@ -1,0 +1,340 @@
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+header {
+    padding: 20px 0;
+    padding-left: 70px;
+    text-align: left;
+}
+
+header a{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .5);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* CHECKOUT-INFO */
+
+.checkout-info{
+    display: flex;
+    width: 100%;
+    float: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    /* padding: 20px; */
+ 
+}
+
+.checkout-info input {
+    background-color:  #F3F3F3;
+    height: auto;
+
+}
+
+.info-section {
+    width: 800px;
+    /* gap: 30px; */
+    padding-right: 20px ;
+    padding-left: 70px;
+}
+
+
+.info-section h3{
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 300;
+    margin-bottom: .6em;
+}
+
+
+
+.info-section input[type="email"],
+.info-section input[type="text"] {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    /* border-radius: 5px; */
+    box-sizing: border-box;
+}
+
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.name input {
+    width: 48%;
+}
+
+.diachi{
+    padding-top: 42px;
+    gap: 13px;
+}
+
+
+
+/* PRODUCT-SECTION */
+
+.product-section {
+    max-width: 500px;
+    margin-left: auto;
+    border-left: 1px solid #eee;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.product-summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.product {
+    display: flex;
+    margin-bottom: 1.8em;
+    margin: 0;
+    border: none;
+    letter-spacing: 3px;
+    gap: 20px;
+    align-items: flex-start;
+    
+}
+
+
+.product img{
+    width: 3.75em;
+    height: auto;
+    border: 1px solid #e1e1e1;
+    max-width: none;
+
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    align-items: flex-start;
+    text-align: start;
+    
+}
+.product-details p{
+    font-size: 16px;
+    color: #717171;
+    margin-bottom: .25rem;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* DISCOUNT */
+
+
+.discount-code {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+    width: 100%;
+    margin-top: 50px;
+    padding-right: 20px;
+}
+
+.discount-code input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+
+.discount-code button {
+    border: none;
+    width: 120px;
+    background-color: #999999;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 16px;
+    /* display: flex; */
+
+}
+
+.discount-code button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.total p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.total span {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    align-items: end;
+}
+
+.bottom-group{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+
+.bottom-left{
+    display: flex;
+    gap: 2px;
+}
+
+.bottom-left a{
+    transition: all 0.2s ease;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.bottom-right button{
+    text-decoration: none;
+    background-color: #333333;
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    padding: 19px 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+}
+
+.bottom-right button:hover{
+    color: #a59797;
+}
+
+
+
+@media (max-width: 576px) {
+html,body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+    
+.info-section{
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.product-section{
+    width: 100%;
+    max-width: 100%;
+}
+
+.checkout-info{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-group{
+    bottom: 0;
+}
+
+.bottom-right button{
+    font-size: 13px;
+    padding: 14px 20px;
+
+}
+
+
+.product img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #e1e1e1;
+    max-width: none;
+
+}
+
+.product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.discount-code {
+    display: flex;
+    padding: 0;
+    /* margin-bottom: 20px; */
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    /* padding-right: 20px; */
+}
+
+.discount-code input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 250px;
+    box-sizing: border-box;
+}
+
+
+.discount-code button {
+    border: none;
+    width: 100px;
+    background-color: #999999;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 16px;
+    /* display: flex; */
+
+}
+}
